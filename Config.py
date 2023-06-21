@@ -1,4 +1,4 @@
-TOKEN = ''
+TOKEN = '5943760320:AAH-I50hnme8EDtezJXbjcyvA_AiIW0DlgM'
 HOST = ''
 USER = ''
 PASSWORD = ''
