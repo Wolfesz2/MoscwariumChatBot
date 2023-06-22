@@ -24,7 +24,7 @@ async def initialize(message: types.Message):
     await bot.send_message(chat_id=message.chat.id, text='Добро пожаловать в бота Москвариума.'
                                                          'В данном боте вы можете узнать ответы '
                                                          'на частые вопросы.', reply_markup=rpl_keyboard)
-
-
+    
+    
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
