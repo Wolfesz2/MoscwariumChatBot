@@ -4,3 +4,7 @@ from aiogram.utils.helper import Helper, HelperMode, ListItem
 
 class States(StatesGroup):
     mode = HelperMode.snake_case
+
+    mainMenu = State()
+    Questions = State()
+    PQuestions = State()
