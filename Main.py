@@ -1,14 +1,14 @@
 import array
-import aiogram.types
-from aiogram import Bot, types
-from aiogram.dispatcher import Dispatcher, FSMContext
+import aiogram
 from aiogram.dispatcher.filters import state
-from aiogram.utils import executor
+from aiogram import Bot, types, Dispatcher
+from aiogram.contrib.fsm_storage.memory import MemoryStorage
+from aiogram.contrib.middlewares.logging import LoggingMiddleware
 from aiogram.types import ReplyKeyboardRemove, \
     ReplyKeyboardMarkup, KeyboardButton, \
     InlineKeyboardMarkup, InlineKeyboardButton, message
-from aiogram.contrib.fsm_storage.memory import MemoryStorage
-from aiogram.contrib.middlewares.logging import LoggingMiddleware
+from aiogram.utils import executor
+
 from Config import TOKEN, HOST, PASSWORD, DB_NAME, USER, PORT
 from Utils import States
 import psycopg2
